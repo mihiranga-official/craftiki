@@ -1,22 +1,16 @@
-import { AfterContentInit, AfterViewInit, Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-declare var bootstrap: any; 
+import { Component, OnInit } from '@angular/core';
+import {RouterModule } from '@angular/router';
+import { HomePageComponent } from "./home-page/home-page.component";
+import { OurservicessComponent } from "./ourservicess/ourservicess.component";
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterModule, HomePageComponent, OurservicessComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
-  currentYear: number = new Date().getFullYear();
-  ngAfterViewInit(): void {
-    const carouselElement = document.querySelector('#carouselExample');
-    if (carouselElement) {
-      new bootstrap.Carousel(carouselElement, {
-        interval: 3000,  // Change this to whatever duration (ms)
-        ride: 'carousel'
-      });
-    }
-  }
+export class AppComponent  {
+ 
 }
