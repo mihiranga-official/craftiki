@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CarouselComponent } from "../carousel/carousel.component";
 
 @Component({
   selector: 'app-ourservicess',
   standalone: true,
-  imports: [],
+  imports: [CarouselComponent],
   templateUrl: './ourservicess.component.html',
   styleUrl: './ourservicess.component.scss'
 })
