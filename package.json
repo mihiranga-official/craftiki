@@ -5,10 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "prebuild": "node generate-sitemap.js",
-    "build": "ng build --configuration production",
-    "postbuild": "echo ✅ Build completed"
+    "test": "ng test"
+
   },
   "private": true,
   "dependencies": {
