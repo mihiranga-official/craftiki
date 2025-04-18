@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-import { ThankyouComponent } from "../thankyou/thankyou.component";
+import { ThankyouComponent } from '../thankyou/thankyou.component';
 
 @Component({
   selector: 'app-ourservicess',
   standalone: true,
-  imports: [ ThankyouComponent],
+  imports: [ThankyouComponent],
   templateUrl: './ourservicess.component.html',
   styleUrl: './ourservicess.component.scss'
 })
-export class OurservicessComponent implements OnInit{
-  constructor(private router: Router) {
-
-  }
-  ngOnInit(): void {
+export class OurservicessComponent implements OnInit {
   
-  }
-  onBackClick(){
-    this.router.navigateByUrl('/')
-  }
   currentYear: number = new Date().getFullYear();
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    // You can add analytics, scroll to top, or meta tags here if needed
+  }
+
+  onBackClick(): void {
+    this.router.navigateByUrl('/');
+  }
 }
