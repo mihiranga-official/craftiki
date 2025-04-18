@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import {  Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CounterComponent } from "../counter/counter.component";
+
 declare var bootstrap: any;
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CounterComponent],
+  imports: [],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
