@@ -1,0 +1,11 @@
+# robots.txt for Craftiki
+
+User-agent: *
+Allow: /
+
+# Allow important assets
+Allow: /assets/
+Allow: https://craftiki.vercel.app/ourService
+
+# Sitemap (add if you have a sitemap file)
+Sitemap: https://craftiki.vercel.app/sitemap.xml
