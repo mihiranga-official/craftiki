@@ -71,4 +71,7 @@ export class HomePageComponent implements OnInit {
   onOurServiceClick() {
     this.router.navigateByUrl('/ourService');
   }
+  onPriceClick(){
+    this.router.navigateByUrl('/priceList')
+  }
 }

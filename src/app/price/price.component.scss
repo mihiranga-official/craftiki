@@ -1,0 +1,39 @@
+.our-service-btn {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .checked {
+    color: orange;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+  
+
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+  }
+
+  
+  .custom-accordion .accordion-button {
+    background-color: #e0f0ff;
+    color: #000; /* Keep text readable */
+  }
+  
+  .custom-accordion .accordion-button:not(.collapsed) {
+    background-color: #cce8ff;
+  }
+  
+  

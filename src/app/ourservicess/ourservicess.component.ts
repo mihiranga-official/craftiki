@@ -22,4 +22,7 @@ export class OurservicessComponent implements OnInit {
   onBackClick(): void {
     this.router.navigateByUrl('/');
   }
+  onPriceClick(){
+    this.router.navigateByUrl('/priceList')
+  }
 }
